@@ -1,0 +1,6 @@
+framework module Pods_ExDynamicCustomViewTests {
+  umbrella header "Pods-ExDynamicCustomViewTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

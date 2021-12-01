@@ -6,8 +6,16 @@
 //
 
 import Foundation
+import RxDataSources
 
 struct MyModel {
     var message: String
     var isDone: Bool = false
+}
+
+extension MyModel: IdentifiableType, Equatable {
+    var identity: String {
+        return UUID().uuidString
+    }
+    
 }
