@@ -16,6 +16,12 @@
 		4A4818E62756A443001BC1D4 /* ExDynamicCustomViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4818E52756A443001BC1D4 /* ExDynamicCustomViewTests.swift */; };
 		4A4818F02756A443001BC1D4 /* ExDynamicCustomViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4818EF2756A443001BC1D4 /* ExDynamicCustomViewUITests.swift */; };
 		4A4818F22756A443001BC1D4 /* ExDynamicCustomViewUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4818F12756A443001BC1D4 /* ExDynamicCustomViewUITestsLaunchTests.swift */; };
+		4A4819072756A6DE001BC1D4 /* MyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4819062756A6DE001BC1D4 /* MyModel.swift */; };
+		4A48190A2756A852001BC1D4 /* String+Height.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4819092756A852001BC1D4 /* String+Height.swift */; };
+		4A48190C2756AA54001BC1D4 /* NSObject+Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A48190B2756AA54001BC1D4 /* NSObject+Name.swift */; };
+		4A4819182756B127001BC1D4 /* UIView+Nib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4819172756B127001BC1D4 /* UIView+Nib.swift */; };
+		4A4819212756C00A001BC1D4 /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A48191F2756C00A001BC1D4 /* MyTableViewCell.swift */; };
+		4A4819222756C00A001BC1D4 /* MyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A4819202756C00A001BC1D4 /* MyTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +55,12 @@
 		4A4818EB2756A443001BC1D4 /* ExDynamicCustomViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExDynamicCustomViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A4818EF2756A443001BC1D4 /* ExDynamicCustomViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExDynamicCustomViewUITests.swift; sourceTree = "<group>"; };
 		4A4818F12756A443001BC1D4 /* ExDynamicCustomViewUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExDynamicCustomViewUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4A4819062756A6DE001BC1D4 /* MyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyModel.swift; sourceTree = "<group>"; };
+		4A4819092756A852001BC1D4 /* String+Height.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Height.swift"; sourceTree = "<group>"; };
+		4A48190B2756AA54001BC1D4 /* NSObject+Name.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Name.swift"; sourceTree = "<group>"; };
+		4A4819172756B127001BC1D4 /* UIView+Nib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Nib.swift"; sourceTree = "<group>"; };
+		4A48191F2756C00A001BC1D4 /* MyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
+		4A4819202756C00A001BC1D4 /* MyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +111,9 @@
 		4A4818CD2756A441001BC1D4 /* ExDynamicCustomView */ = {
 			isa = PBXGroup;
 			children = (
+				4A4819052756A6DA001BC1D4 /* Models */,
+				4A4818FE2756A459001BC1D4 /* Views */,
+				4A4819082756A842001BC1D4 /* Utils */,
 				4A4818CE2756A441001BC1D4 /* AppDelegate.swift */,
 				4A4818D02756A441001BC1D4 /* SceneDelegate.swift */,
 				4A4818D22756A441001BC1D4 /* ViewController.swift */,
@@ -125,6 +140,33 @@
 				4A4818F12756A443001BC1D4 /* ExDynamicCustomViewUITestsLaunchTests.swift */,
 			);
 			path = ExDynamicCustomViewUITests;
+			sourceTree = "<group>";
+		};
+		4A4818FE2756A459001BC1D4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4A48191F2756C00A001BC1D4 /* MyTableViewCell.swift */,
+				4A4819202756C00A001BC1D4 /* MyTableViewCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4A4819052756A6DA001BC1D4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4A4819062756A6DE001BC1D4 /* MyModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4A4819082756A842001BC1D4 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				4A4819092756A852001BC1D4 /* String+Height.swift */,
+				4A48190B2756AA54001BC1D4 /* NSObject+Name.swift */,
+				4A4819172756B127001BC1D4 /* UIView+Nib.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +273,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A4819222756C00A001BC1D4 /* MyTableViewCell.xib in Resources */,
 				4A4818DB2756A443001BC1D4 /* LaunchScreen.storyboard in Resources */,
 				4A4818D82756A443001BC1D4 /* Assets.xcassets in Resources */,
 				4A4818D62756A441001BC1D4 /* Main.storyboard in Resources */,
@@ -258,7 +301,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A4819182756B127001BC1D4 /* UIView+Nib.swift in Sources */,
 				4A4818D32756A441001BC1D4 /* ViewController.swift in Sources */,
+				4A4819072756A6DE001BC1D4 /* MyModel.swift in Sources */,
+				4A48190C2756AA54001BC1D4 /* NSObject+Name.swift in Sources */,
+				4A48190A2756A852001BC1D4 /* String+Height.swift in Sources */,
+				4A4819212756C00A001BC1D4 /* MyTableViewCell.swift in Sources */,
 				4A4818CF2756A441001BC1D4 /* AppDelegate.swift in Sources */,
 				4A4818D12756A441001BC1D4 /* SceneDelegate.swift in Sources */,
 			);
