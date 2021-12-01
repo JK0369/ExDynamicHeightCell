@@ -46,9 +46,9 @@ class MyTableViewCell: UITableViewCell {
     
     // MARK: Binding
 
-    func bind(mySectionItem: MySection.Item) {
-        messageLabel.text = mySectionItem.message
-        accessoryType = mySectionItem.isDone ? .checkmark : .none
+    func bind(model: MyModel) {
+        messageLabel.text = model.message
+        accessoryType = model.isDone ? .checkmark : .none
     }
     
     

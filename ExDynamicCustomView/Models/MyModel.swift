@@ -8,13 +8,15 @@
 import Foundation
 import RxDataSources
 
-struct MyModel {
+public typealias MySection = SectionModel<String, MyModel>
+
+public struct MyModel {
     var message: String
     var isDone: Bool = false
 }
 
-extension MyModel: IdentifiableType, Equatable {
-    var identity: String {
+extension MyModel: IdentifiableType {
+    public var identity: String {
         return UUID().uuidString
     }
     
